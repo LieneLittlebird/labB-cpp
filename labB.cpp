@@ -21,28 +21,28 @@ int findFibonacci(int n)
     // The Formula for a Fibonacci number - the sum of the two previous numbers.
     n = (n - 1) + (n - 2);
 
-    bool continueLoop = true;
-    continueLoop = true;
-    while (continueLoop)
-    {
-        cin >> n;
-        if (cin.fail())
-        {
-            cout << "Invalid input. Please, enter an integer\n";
-            cin.clear();
-            cin.ignore(256, '\n');
-        }
-        else if (n < 0)
-        {
-            cout << "Invalid input. Please, enter a positive integer \n";
-            cin.clear();
-            cin.ignore(256, '\n');
-        }
-        else
-        {
-            continueLoop = false;
-        }
-    };
+    // bool continueLoop = true;
+    // continueLoop = true;
+    // while (continueLoop)
+    // {
+    //     cin >> n;
+    //     if (cin.fail())
+    //     {
+    //         cout << "Invalid input. Please, enter an integer\n";
+    //         cin.clear();
+    //         cin.ignore(256, '\n');
+    //     }
+    //     else if (n < 0)
+    //     {
+    //         cout << "Invalid input. Please, enter a positive integer \n";
+    //         cin.clear();
+    //         cin.ignore(256, '\n');
+    //     }
+    //     else
+    //     {
+    //         continueLoop = false;
+    //     }
+    // };
 
     // The function prints out the Fibonacci number for the input number (n)
     cout << "The Fibonacci number is " << n << endl;
@@ -53,51 +53,53 @@ int findFibonacci(int n)
 // A function that determines, if a number is a Fibonacci number
 int isFibonacci(int n)
 {
-    bool continueLoop = true;
-    continueLoop = true;
-    while (continueLoop)
-    {
-        cin >> n;
-        if (cin.fail())
-        {
-            cout << "Invalid input. Please, enter an integer\n";
-            cin.clear();
-            cin.ignore(256, '\n');
-        }
-        else if (n < 0)
-        {
-            cout << "Invalid input. Please, enter a positive integer \n";
-            cin.clear();
-            cin.ignore(256, '\n');
-        }
-        else
-        {
-            continueLoop = false;
-        };
-        /* The value of the input number is compared to the requirements for a Fibonacci number.
+    // bool continueLoop = true;
+    // continueLoop = true;
+    // while (continueLoop)
+    // {
+    //     cin >> n;
+    //     if (cin.fail())
+    //     {
+    //         cout << "Invalid input. Please, enter an integer\n";
+    //         cin.clear();
+    //         cin.ignore(256, '\n');
+    //     }
+    //     else if (n < 0)
+    //     {
+    //         cout << "Invalid input. Please, enter a positive integer \n";
+    //         cin.clear();
+    //         cin.ignore(256, '\n');
+    //     }
+    //     else
+    //     {
+    //         continueLoop = false;
+    //     };
+    /* The value of the input number is compared to the requirements for a Fibonacci number.
     Depending on whether the requirements are met, a corresponding statement is printed. */
-        if (n == (n - 1) + (n - 2))
-        {
-            cout << "Fibonacci number" << endl;
-            ;
-        }
-        else
-        {
-            cout << "NOT a Fibonacci number" << endl;
-        }
-        return 0;
-    };
-
-    // Execution of the program
-    int main()
+    if (n == (n - 1) + (n - 2))
     {
-        // Definition of the repeatable value - it will be checked at the end of each execution cycle
-        int repeatExec;
-        do
-        {
-            findFibonacci(n);
-            isFibonacci(n);
-            cout << " Enter 1 to continue or 0 to quit: " << endl;
-            cin >> repeatExec;
-        } while (repeatExec == 1);
+        cout << "Fibonacci number" << endl;
+        ;
     }
+    else
+    {
+        cout << "NOT a Fibonacci number" << endl;
+    }
+    return 0;
+};
+
+// Execution of the program
+int main()
+{
+    // Definition of the repeatable value - it will be checked at the end of each execution cycle
+    int repeatExec;
+    do
+    {
+        int n;
+        cin >> n;
+        findFibonacci(n);
+        isFibonacci(n);
+        cout << " Enter 1 to continue or 0 to quit: " << endl;
+        cin >> repeatExec;
+    } while (repeatExec == 1);
+}
