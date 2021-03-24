@@ -14,31 +14,40 @@ Program created at: XXXX */
 */
 
 #include <iostream>
+#include <math.h>
 using namespace std;
 
-int fibonacciNumbers()
+// A function that finds the Fibonacci number for the n parameter
+int findFibonacci(int n)
 {
-    int count = 0;
-    int inputNumber;
-    int fiboNum;
+    /* The Formula for a Fibonacci number - the sum of the two previous numbers.
+    The function prints out the Fibonacci number for the input number (n)
+    */
+    n = (n - 1) + (n - 2);
 
-    cout << "Enter the number of elements: \n";
-    cin >> count;
-    cout << "Enter " << count << " numbers: \n";
-
-    for (int i = 0; i < count; i++)
-    {
-        cin >> inputNumber;
-
-        if (inputNumber == (inputNumber - 1) + (inputNumber - 2))
-        {
-            cout << "Previous number - a Fibonacci number" << endl;
-        }
-    }
+    cout << "The Fibonacci number is " << n << endl;
 
     return 0;
-}
+};
 
+int isFibonacci(int n)
+{
+    for (int i = 0; i <= n; i++)
+    {
+        // findFibonacci(n);
+        // if (i == n)
+        // {
+        //     cout << "Is a Fibonacci number";
+        // }
+        // else
+        // {
+        //     cout << "NOT a Fibonacci number";
+        // }
+    }
+    // Determine if a number is a perfect square
+    // if (true), cout << Is Fibonacci; if (false), cout << NOT Fibonacci
+    return 0;
+}
 // Execution of the program
 int main()
 {
@@ -46,7 +55,8 @@ int main()
     int repeatExec;
     do
     {
-        fibonacciNumbers();
+        findFibonacci(8);
+        isFibonacci(8);
         cout << " Enter 1 to continue or 0 to quit: " << endl;
         cin >> repeatExec;
     } while (repeatExec == 1);
