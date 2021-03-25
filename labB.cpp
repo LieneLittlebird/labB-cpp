@@ -110,7 +110,7 @@ void exerciseOne()
     // The result of the function are saved in a variable for a cleaner cout block.
     int fibonacciNumber = findFibonacci(n);
 
-    cout << "The fibonacci term Nr. " << n << " is " << fibonacciNumber << endl
+    cout << "The Fibonacci term Nr. " << n << " is " << fibonacciNumber << endl
          << endl;
 }
 
@@ -135,7 +135,7 @@ int main()
     int repeatExec = 0;
     do
     {
-        exerciseOne();
+        // exerciseOne();
         exerciseTwo();
 
         cout << "\nEnter 1 to continue or 0 to quit:\n"
