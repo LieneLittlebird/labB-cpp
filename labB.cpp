@@ -4,9 +4,7 @@ Create and use a function to calculate the Fibonachi number f(n).
 (Fibonachi numbers are f(1) = 1, f(2) = 1, f(n) = f(n-1) + f(n-2), t. i. f(3)=2, f(4)=3, f(5)=5 utt.). 
 Also, check if the given number n is a Fibonachi number. 
 Create and use a function for this check.
-Program created at: XXXX */
-
-// 4. Test plan and results
+Program created at: 2021/25.03 */
 
 #include <iostream>
 using namespace std;
