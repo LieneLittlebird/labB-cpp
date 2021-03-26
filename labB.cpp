@@ -29,10 +29,10 @@ int findFibonacci(int n)
 /* A function checks, if the entered number is a Fibonacci number.
 It starts with 0 and 1, since those are the first two Fibonacci numbers.
 They are added to each other to get their Fibonacci number.
-Then a while loop is executed, which stops only when next is not smaller than the input number.
+Then a while loop is executed, which stops only when the variable "next" is not smaller than the input number.
 In each iteration the variables are assigned a new value thus incrementing the initial
 number and getting to the next term in the Fibonacci sequence.
-If next (each Fibonacci number) is equal to the input number, the input number IS a Fibonacci number.
+If "next" (each Fibonacci number) is equal to the input number, the input number IS a Fibonacci number.
 If not, it is not a Fibonacci number.
 */
 int isFibonacci(int n)
@@ -107,14 +107,14 @@ void exerciseOne()
     // Input + validation of the input
     n = getIntInput();
 
-    // The result of the function are saved in a variable for a cleaner cout block.
+    // The results of the function are saved in a variable for a cleaner cout block.
     int fibonacciNumber = findFibonacci(n);
 
     cout << "The Fibonacci term Nr. " << n << " is " << fibonacciNumber << endl
          << endl;
 }
 
-/* A function for exercise one (checking if the input is a Fibonacci number).
+/* A function for exercise two (checking if the input is a Fibonacci number).
 This function deals with the input/output of the exercise and
 executes the function to check if the input is a Fibonacci number.
 */
@@ -131,11 +131,10 @@ void exerciseTwo()
 // Execution of the program
 int main()
 {
-    // Definition and initialization of the repeatable value - it will be checked at the end of each execution cycle
     int repeatExec = 0;
     do
     {
-        // exerciseOne();
+        exerciseOne();
         exerciseTwo();
 
         cout << "\nEnter 1 to continue or 0 to quit:\n"
